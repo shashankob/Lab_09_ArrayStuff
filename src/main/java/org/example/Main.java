@@ -27,7 +27,5 @@ public class Main {
 
         System.out.println("The sum of the random array dataPoints is: " + sumArray);
         System.out.println("The average of the random array dataPoints is: " + averageArray);
-
-
     }
 }

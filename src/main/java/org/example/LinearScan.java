@@ -1,5 +1,6 @@
-import org.example.SafeInput;
+package main.java.org.example;
 
+import org.example.SafeInput;
 import java.util.Scanner;
 
 public class LinearScan {
@@ -47,26 +48,26 @@ public class LinearScan {
             }
         }
 
-        System.out.println("Minimum value: " + minNumber);
-        System.out.println("Maximum value: " + maxNumber);
+        System.out.println("Minimum value of the array: " + minNumber);
+        System.out.println("Maximum value of the array: " + maxNumber);
 
         double averageNumber = getAverage(dataPoints);
         System.out.println("The average of dataPoints is " + averageNumber);
     }
 
-    public static int[] generateRandomArray(int length, int min, int max) {
+    public static int[] generateRandomArray(int length, int minN, int maxN) {
         int[] array = new int[length];
         for (int i = 0; i < length; i++) {
-            array[i] = (int) (Math.random() * (max - min + 1) + min);
+            array[i] = (int) (Math.random() * (maxN - minN + 1) + minN);
         }
         return array;
     }
 
     public static double getAverage(int[] values) {
-        int sum = 0;
+        int sumN = 0;
         for (int value : values) {
-            sum += value;
+            sumN += value;
         }
-        return (double) sum / values.length;
+        return (double) sumN / values.length;
     }
 }
